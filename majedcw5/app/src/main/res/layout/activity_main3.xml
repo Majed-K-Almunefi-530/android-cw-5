@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36000000"
+    tools:context=".MainActivity">
+    <attr name="sc_corner_radius" format="dimension" />
+    <attr name="sc_border_width" format="dimension" />
+    <attr name="sc_tint_color" format="color" />
+    <attr name="sc_checked_text_color" format="color" />
+
+    <TextView
+        android:id="@+id/calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="Grade calculator"
+        android:textColor="#710303"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/powered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/calculator"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="cursive"
+        android:text="powered by kuwait codes"
+        android:textColor="#7E2408"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/enteryourgrades"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/powered"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:text="enter your two numbers please"
+        android:textColor="#021268"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/enteryourgrades"
+        android:layout_marginTop="30dp"
+        android:background="#6BFF3D00"
+        android:ems="10"
+        android:hint="First number"
+        android:textAlignment="center"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/num1"
+        android:layout_marginTop="70dp"
+        android:background="#6BFF3D00"
+        android:ems="10"
+        android:hint="First number"
+        android:textAlignment="center"
+        android:inputType="textPersonName" />
+    <Button
+        android:id="@+id/add"
+        android:layout_width="2009dp"
+        android:layout_height="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/num2"
+        android:layout_marginTop="80dp"
+        android:background="#4503A9F4"
+        android:text="ADDITION"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="2009dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/add"
+        android:layout_marginTop="70dp"
+        android:background="#4503A9F4"
+        android:text="subtraction"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="2009dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/minus"
+        android:layout_marginTop="70dp"
+        android:background="#6DFF0000"
+        android:text="RESET"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="1000dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/reset"
+        android:layout_marginTop="60dp"
+        android:textSize="50dp"
+        android:text=" "
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>
